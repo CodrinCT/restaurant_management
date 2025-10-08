@@ -4,10 +4,14 @@ namespace App\Http\Controllers\Products;
 
 use App\Http\Controllers\Controller;
 use App\Models\Product;
+use App\Services\ProductService;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    public function __construct(
+        protected ProductService $products
+    ) {}
     /**
      * Display a listing of the resource.
      */
