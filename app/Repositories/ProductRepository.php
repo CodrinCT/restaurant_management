@@ -10,3 +10,4 @@ interface ProductRepository
     public function update($id, array $data);  // 👈 new
     public function delete($id);
 }
+ 
